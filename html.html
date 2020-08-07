@@ -3,13 +3,13 @@
 <head>
 	<title>This is the demo</title>
 </head>
-<body  >
-	<h1>This is the main header element. </h1> 
+<body  style="background-color: cyan">
+	<h1>This is the main header(h1) element. </h1> 
 	<!-- We can use 6 headers. 
 	The font size of the h1 is the largest and 
 	keeps on decreasing as we move further-->
 
-		<p>this is the <b><i>paragraph</i></b> element. This         eliminates 
+		<p>this is a <b><i>paragraph</i></b> element. It        eliminates 
 			
 			extra 
 					spaces
@@ -17,12 +17,14 @@
 
 		<!-- this is the comment. we shall document here-->
 
-		<pre>this is the preformatted text element. Tag is < pre> < /pre>. This prints 
+		<pre>This is a preformatted text element. Tag is < pre> < /pre>.       It prints 
 			the
 				text 
 					as it
 							is.
 						</pre>
+
+		<span> < span> element is used in this line. Seems like it does nothing.</span>
 
 	
 
@@ -72,11 +74,14 @@
 
 	<table style="width:20%" border="1"> 
 		<caption>This is a sample of basic table.</caption>
-		<tr><!-- < tr> creates a row in the table -->
+
+		<thead>
+			<tr><!-- < tr> creates a row in the table -->
 			<th>Country</th> <!-- < th> is the header of the columns  -->
 			<th>Capital</th>
 			<th>Language</th>
 		</tr> 
+		</thead>
 		<tr>
 			<td>Nepal</td> <!-- < td> is used to enter data under the column name -->
 			<td>Kathmandu</td>
@@ -93,7 +98,74 @@
 			<td>Madrid</td>
 			<td>Spanish</td>
 		</tr>
+
   
+	</table>
+	
+	</br>
+
+	<table width="50%" border="1"> 
+		<caption>A table that uses colspan and rowspan</caption>
+		
+		<thead>
+			<tr>
+				<th>Country</th>
+				<th>Capital</th>
+				<th>Language</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td rowspan="2">Nepal<br>China</td> <!-- rowspan tells upto where the particular row expands. 2 means the row is extended to size of 2 rows--> 
+				<td>Kathmandu</td>
+				<td>Nepali</td>
+			</tr>
+
+			<tr>
+				<!-- <td>China</td> -->
+				<td>Beijing</td>
+				<td>Chinese</td>
+			</tr>
+
+			<tr>
+				<td rowspan="3">Spain <br> France <br> England</td>
+				<td>Madrid</td>
+				<td>Spanish</td>
+			</tr>
+
+			<tr>
+				<!-- <td>France</td> -->
+				<td>Paris</td>
+				<td>French</td>
+			</tr>
+
+			<tr>
+				<!-- <td>England</td> -->
+				<td>London</td>
+				<td rowspan="3" align="center">English</td>
+				
+			</tr>
+
+			<tr>
+				<td rowspan="2">Canada <br> USA</td>
+				<td>Ottawa</td>
+				<!-- <td>English</td> -->
+				
+			</tr>
+
+			<tr>
+				<!-- <td>USA</td> -->
+				<td>Washington DC</td>
+				<!-- <td>English</td> -->
+			</tr>
+
+
+
+		</tbody>
+
+
+		<tfoot ><tr><td colspan="3" align="center"><i>Countries of the same continent are kept in the same cell of the table.</i></td></tr></tfoot>
 	</table>
 
 
@@ -102,6 +174,6 @@
 
 </body>
 
-<footer><i>This is the footer. Write some copyright stuff here. &copy</i></footer>
+<footer ><p align="right"><i>This is the footer. Write some copyright stuff here. &copy</i></p></footer>
 
 </html>
