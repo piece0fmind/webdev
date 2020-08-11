@@ -3,40 +3,98 @@
 
 <p>A simple form</p>
 
-<form >
-	<label for="fname">First Name:</label><br>  <!-- The for value of the label and id value of an input must be same if they need to work together -->
-	<input type="text" id="fname" name="fname"><br>
-	<label for="lname">Last Name:</label><br>
-	<input type="text" id="lname" name="lname"><br>Gender<br>
+<form > <fieldset disabled="pw" > <legend><i>Sign in</i></legend><!-- disabled attribute disables the fieldset -->
+	<label for="un">Username:</label> <!-- The for value of the label and id value of an input must be same if they need to work together -->
+	<input type="text" id="un" name="un"><br>
+	<label for="pas">Password:</label><br>
+	<input type="text" id="pas" name="pw">
 	
-	<input type="radio" id="male" name="gender" value="male">
-	<label for="male">Male</label><br>
-	
-	<input type="radio" id="female" name="gender" value="female">
-	<label for="female">Female</label><br>
-
-	<input type="radio" id="other"  name="gender" value="other">
-	<label for="other">Other</label><br>
-
-
-
-	<input type="button" name="Sub" value="Submit" >
+	<input type="button" name="signin" value="Sign In" >
 	<!-- <input type="submit" name="submit"> -->
+	<pre>You can't sign in until you create an account!</pre>
+	</fieldset>
+	
+
+
+
+<p><b>Fill in the following form </b></p>
+
+<form action="action.php" target="_blank" enctype="mulitipart/form-data">
+	<fieldset>
+			<legend><i>Personal info</i></legend>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname"><br>
+
+			<label for="fname">Last Name:</label>
+			<input type="text" id="lname" name="lname"><br>
+
+			<label for="gender">Gender:</label><br>
+			<input type="radio" name="">
+			<label for="male">Male</label><br>
+			<input type="radio" name="">
+			<label for="female">Female</label><br>
+			<input type="radio" name="">
+			<label for="other">Other</label><br>
+
+			<label for="dob">Birthday:</label>
+			<input type="date" id="dob" name="dob">
+
+
+
+	</fieldset>
+	<fieldset>
+		<legend><i>Education</i></legend>
+		<label for="education">Looking to study in the field of:</label>
+		<select id="education">
+			<option value="science">Science</option>
+			<option value="politics">Politics</option>
+			<option value="sociology">Sociology</option>
+			<option value="psycology">Psychology</option>
+			<option value="business">Business</option>
+
+		</select><br><hr>
+					
+		<p>Your qualification:</p>
+		<input type="radio" id="school" name="school">
+		<label for="school">School</label><br>
+		<input type="radio" id="undergrad" name="undergrad">
+		<label for="undergrad">Undergraduate</label><br>
+		<input type="radio" id="grad" name="grad">
+		<label for="grad">Graduate</label><br>
+		<input type="radio" id="doct" name="doct">
+		<label for="doct">Doctorate</label><br> <hr>
+
+		<P>What kind of learner do you consider yourself to be?</P>
+		<input type="checkbox" id="curious" name="">
+		<label for="curious">someone who's just curious</label><br>
+		<input type="checkbox" id="job" name="">
+		<label for="job">someone looking to do a job </label><br>
+		<input type="checkbox" id="passion" name="">
+		<label for="passion">someone who's always had this passion</label><br>
+		<input type="checkbox" id="research" name="">
+		<label for="research">someone who's doing researchs</label><br>
+
+
+	</fieldset>
+	<fieldset >
+		<legend><i>Create Account </i></legend>
+		<label for="uname">Create Username:</label>
+		<input type="text" id="uname" name="uname"><br>
+		<label for="pass">Password:</label>
+		<input type="password" name="pword"><br>
+		<label for="confirm">Confirm password:</label>
+		<input type="password" id="confirm" name=""><br>
+
+		<input type="button" id="submit" name="submit" value="Submit">
+
+
+
+
+	</fieldset>
 
 </form>
+
 													
-<form>
-	What do you like ?<br>
-	<input type="checkbox" id="bus" name="profession" value="Business">
-	<label for="bus">Business</label><br>
-	<input type="checkbox" id="job" name="profession" value="Job">
-	<label for="job">Job</label><br>
-	<input type="checkbox" id="free" name="profession" value="Freelancing">
-	<label for="free">Freelancing</label><br>
-
-	
-
- </form>
 
 
 
