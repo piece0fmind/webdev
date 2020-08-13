@@ -1,13 +1,31 @@
-<h1>We shall make some forms.</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Some works on forms</title>
+	<link rel="stylesheet" type="text/css" href="styles/form.css">
+	<style type="text/css">
+		
+		#form1{
+			background-image: url(images/ambient.jpg);
+			opacity: 0.8
+			
+		}
+
+
+	</style>
+</head>
+<body style="background-image: url(images/ambient_.png);">
+
+	<h1>We shall make some forms.</h1>
 
 
 <p>A simple form</p>
 
-<form > <fieldset disabled="pw" > <legend><i>Sign in</i></legend><!-- disabled attribute disables the fieldset -->
+<form id="form1"> <fieldset id="formfield" disabled="pw" > <legend><i>Sign in</i></legend><!-- disabled attribute disables the fieldset -->
 	<label for="un">Username:</label> <!-- The for value of the label and id value of an input must be same if they need to work together -->
-	<input type="text" id="un" name="un"><br>
-	<label for="pas">Password:</label><br>
-	<input type="text" id="pas" name="pw">
+	<input type="text" name="un"><br>
+	<label for="pas">Password:</label>
+	<input type="text" id="pas" name="pw"><br>
 	
 	<input type="button" name="signin" value="Sign In" >
 	<!-- <input type="submit" name="submit"> -->
@@ -19,14 +37,14 @@
 
 <p><b>Fill in the following form </b></p>
 
-<form action="action.php" target="_blank" enctype="mulitipart/form-data">
+<form action="action.php" method="get" target="_blank" enctype="mulitipart/form-data">
 	<fieldset>
 			<legend><i>Personal info</i></legend>
 			<label for="fname">First Name:</label>
-			<input type="text" id="fname" name="fname"><br>
+			<input type="text" id="fname" name="fname" placeholder="First Name"><br>
 
-			<label for="fname">Last Name:</label>
-			<input type="text" id="lname" name="lname"><br>
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
 
 			<label for="gender">Gender:</label><br>
 			<input type="radio" name="">
@@ -34,7 +52,7 @@
 			<input type="radio" name="">
 			<label for="female">Female</label><br>
 			<input type="radio" name="">
-			<label for="other">Other</label><br>
+			<label for="other">Prefer not to mention</label><br>
 
 			<label for="dob">Birthday:</label>
 			<input type="date" id="dob" name="dob">
@@ -72,27 +90,32 @@
 		<input type="checkbox" id="passion" name="">
 		<label for="passion">someone who's always had this passion</label><br>
 		<input type="checkbox" id="research" name="">
-		<label for="research">someone who's doing researchs</label><br>
+		<label for="research">someone who's doing research</label><br>
 
 
 	</fieldset>
 	<fieldset >
 		<legend><i>Create Account </i></legend>
 		<label for="uname">Create Username:</label>
-		<input type="text" id="uname" name="uname"><br>
+		<input type="text" id="uname" name="uname" placeholder="Username"><br>
 		<label for="pass">Password:</label>
-		<input type="password" name="pword"><br>
+		<input type="password" name="pword" placeholder="Password"><br>
 		<label for="confirm">Confirm password:</label>
-		<input type="password" id="confirm" name=""><br>
+		<input type="password" id="confirm" placeholder="Password"><br>
 
-		<input type="button" id="submit" name="submit" value="Submit">
-
+		<input type="button" id="submit" name="submit" value="Submit" onsubmit="">
+		<!-- <input type="submit" id="submit" name="submit" value="Submit"> -->
 
 
 
 	</fieldset>
 
 </form>
+
+
+</body>
+</html>
+
 
 													
 
